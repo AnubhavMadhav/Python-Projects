@@ -18,7 +18,7 @@ from django.urls import path
 from blog import views as blog_views
 
 urlpatterns = [
-    path('post/<slug:slug>/', blog_views.post),
+    path('post/<slug:slug>/', blog_views.post),             # So that there can be different page for all posts with their slugs
     path('', blog_views.index),
     path('about/', blog_views.about),
     path('admin/', admin.site.urls),
