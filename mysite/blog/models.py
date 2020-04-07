@@ -16,6 +16,6 @@ class Post(models.Model):
         def __unicode__(self):
             return u'%s', self.title
 
-        @property
-        def get_absolute_url(self):
-            return reverse('blog.views.post', args = [self.slug])
+
+    def get_absolute_url(self):
+        return reverse('blog.views.post', args = [self.slug])
