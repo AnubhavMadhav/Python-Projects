@@ -1,0 +1,3 @@
+body{
+    background:#f00 !important;      /* The '!important' tag do not allows the bootstrap to override this CSS. No matter how important bootstrap is, this CSS will always be executed.*/
+}
