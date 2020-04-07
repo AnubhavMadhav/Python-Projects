@@ -1,19 +1,25 @@
+{% extends 'base.html' %}
+
 <!-- pip install django-bootstrap4 -->
 
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+<!--{% load static %}-->
+<!--<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>-->
 
 
-{% load bootstrap4 %}
-{% bootstrap_css %}
-{% bootstrap_javascript %}
+<!--{% load bootstrap4 %}-->
+<!--{% bootstrap_css %}-->
+<!--{% bootstrap_javascript %}-->
+
+
+
+{% block content %}
 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Index Page</title>
+    <title>{% block title %}{{ block.title }}{% endblock %}</title>
 </head>
 <body>
 <h1>I am an Index Page.</h1>
@@ -26,3 +32,5 @@
 {% endfor %}
 </body>
 </html>
+
+{% endblock %}

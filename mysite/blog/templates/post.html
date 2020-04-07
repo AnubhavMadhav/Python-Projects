@@ -1,8 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Post</title>
+    <title>{% block title %}{{ block.title }}{% endblock %}</title>
 </head>
 <body>
 
@@ -17,3 +21,5 @@
     </div>
 </body>
 </html>
+
+{% endblock %}

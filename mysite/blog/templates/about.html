@@ -1,11 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Anout</title>
+    <title>{% block title %}{{ block.title }}{% endblock %}</title>
 </head>
 <body>
     <h1>This is About Page</h1>
     <h3>It is a Static Page</h3>
 </body>
 </html>
+
+
+{% endblock %}
